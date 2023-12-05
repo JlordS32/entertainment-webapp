@@ -26,9 +26,14 @@ export async function GET(req: NextRequest) {
 
    // Check if limit or page query parameters are present
    if (query && (query.limit || query.page)) {
+
+      // extract data and convert to numbers
+      const page = Number(query.page);
+      const limit = Number(query.limit);
+
       // Calculate the start and end indices for slicing the data
-      const startIndex = (Number(query.page) - 1) * Number(query.limit) || 0;
-      const endIndex = startIndex + Number(query.limit);
+      const startIndex = page - 1 * limit || 0;
+      const endIndex = startIndex + limit;
       return NextResponse.json(data.slice(startIndex, endIndex));
    }
 
