@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+:root {
+   /* Color Palettes */
+   --cl-1: hsl(0, 97%, 63%);
+   --cl-2: hsl(223, 30%, 9%);
+   --cl-3: hsl(223, 23%, 46%);
+   --cl-4: hsl(223, 36%, 14%);
+   --cl-5: hsl(0, 0%, 100%);
+
+   /* Neutral */
+   --white: var(--cl-5)
+   --black: var(--cl-2)
+
+   /* Font */
+   --fs: 15px;
+   --ff: 'Outfit', sans-serif;
+   
+
+   /* Setters */
+   font-size: var(--fs);
+   font-family: var(--ff);
+   font-style: normal;
+   font-weight: 300;
+   line-height: normal;
+}
+
+* {
+   padding: 0;
+   margin: 0;  
+   font-family: inherit;
+}
+
+*, *::before, *::after {
+   box-sizing: border-box;
+}
