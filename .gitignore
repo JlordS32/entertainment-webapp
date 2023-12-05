@@ -14,3 +14,40 @@
 # Avoid your project being littered with annoying .DS_Store files!
 .DS_Store
 .prettierignore
+
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+entertain-app/node_modules
+entertain-app/pnp
+entertain-app/pnp.js
+entertain-app/yarn/install-state.gz
+
+# testing
+entertain-app//coverage
+
+# next.js
+entertain-app/.next/
+entertain-app/out/
+
+# production
+entertain-app/build
+
+# misc
+entertain-app/.DS_Store
+entertain-app/*.pem
+
+# debug
+entertain-app/npm-debug.log*
+entertain-app/yarn-debug.log*
+entertain-app/yarn-error.log*
+
+# local env files
+entertain-app/.env*.local
+
+# vercel
+entertain-app/*.vercel
+
+# typescript
+entertain-app/*.tsbuildinfo
+entertain-app/next-env.d.ts
