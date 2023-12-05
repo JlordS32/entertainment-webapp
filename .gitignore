@@ -24,7 +24,7 @@ entertain-app/pnp.js
 entertain-app/yarn/install-state.gz
 
 # testing
-entertain-app//coverage
+entertain-app/coverage
 
 # next.js
 entertain-app/.next/
