@@ -1,14 +1,17 @@
-export default function Home() {
+import { fetchMovies } from "./action";
+
+async function Home() {
+	
+	const data = await fetchMovies(0);
+	console.log(data);
+	
 	return (
 		<main>
 			<div>
-				<p>
-					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque odio
-					dolore ullam quae suscipit doloribus mollitia voluptatem dolor
-					ducimus, at voluptatibus! Aliquam pariatur fuga ut mollitia quaerat
-					provident inventore quas.
-				</p>
+				<p>Ls</p>
 			</div>
 		</main>
 	);
 }
+
+export default Home;
