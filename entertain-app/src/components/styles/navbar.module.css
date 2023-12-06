@@ -1,0 +1,14 @@
+.nav {
+	height: 100vh;
+	outline: 1px red solid;
+	position: fixed;
+	left: 0;
+	width: 7.5rem;
+	padding: 0 2.75rem;
+   box-sizing: content-box;
+}
+
+.navbar {
+	height: 100%;
+   width: 100%;
+}

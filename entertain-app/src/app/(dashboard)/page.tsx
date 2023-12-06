@@ -1,14 +1,19 @@
-import Image from 'next/image';
+// server actions
 import { fetchMovies } from './action';
-import imgtest from '../../assets/thumbnails/dark-side-of-the-moon/regular/medium.jpg';
+
+// components
 import MovieCard from '@/components/MovieCard';
+
+// styles
+import styles from './home.module.css';
 
 async function Home() {
 	const data = await fetchMovies(1);
 
 	return (
 		<main>
-			<div style={{ display: 'flex', gap: '50px' }}>
+			<section>
+			<div className={styles.movieCardWrapper}>
 				{data.map((item, index) => {
 					return (
 						<MovieCard
@@ -19,6 +24,7 @@ async function Home() {
 					);
 				})}
 			</div>
+			</section>
 		</main>
 	);
 }

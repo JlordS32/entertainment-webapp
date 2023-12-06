@@ -1,0 +1,10 @@
+.movieCardWrapper {
+	outline: 1px red solid;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+	gap: 2.5rem 3rem;
+}
+
+.movieCardWrapper > * {
+	outline: 1px red solid;
+}

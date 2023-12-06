@@ -33,3 +33,9 @@
 *, *::before, *::after {
    box-sizing: border-box;
 }
+
+main {
+   margin-left: 13rem;
+   min-height: 100vh;
+   background-color: black;
+}
