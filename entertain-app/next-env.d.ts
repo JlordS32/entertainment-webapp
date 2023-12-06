@@ -3,4 +3,24 @@
 
 // NOTE: This file should not be edited
 // see https://nextjs.org/docs/basic-features/typescript for more information.
-rasdfasdf
+type Thumbnail = {
+	trending: {
+		small: string;
+		large: string;
+	};
+	regular: {
+		small: string;
+		medium: string;
+		large: string;
+	};
+};
+
+type MovieProps = {
+	title: string;
+	thumbnail: Thumbnail;
+	year: number;
+	category: string;
+	rating: string;
+	isBookmarked: boolean;
+	isTrending: boolean;
+};
