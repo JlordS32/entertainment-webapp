@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from 'next/image';
 
 interface MovieCardProps {
 	movie: MovieProps;
@@ -12,9 +12,9 @@ const MovieCard = ({ movie, index }: MovieCardProps) => {
 				<small>{movie.year}</small>
 				<div>
 					<Image
-                  width={200}
-                  height={200}
-						src={`http://localhost:3000/${movie.thumbnail.regular.small}`}
+						width={200}
+						height={200}
+						src={`/assets/thumbnails/beyond-earth/regular/small.jpg`}
 						alt={movie.title}
 					/>
 				</div>

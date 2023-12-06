@@ -50,4 +50,3 @@ entertain-app/*.vercel
 
 # typescript
 entertain-app/*.tsbuildinfo
-entertain-app/next-env.d.ts
