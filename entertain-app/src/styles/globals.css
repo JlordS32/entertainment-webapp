@@ -37,5 +37,12 @@
 main {
    margin-left: 13rem;
    min-height: 100vh;
-   background-color: black;
+   background-color: var(--cl-2);
+}
+
+@media screen and (max-width: 767px) {
+	main {
+      margin-left: 0;
+      margin-top: 7.25rem;
+   }
 }
